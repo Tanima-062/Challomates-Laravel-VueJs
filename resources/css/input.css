@@ -1,0 +1,348 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ropa+Sans&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css');
+
+@layer base {
+    html {
+        font-family: 'Poppins', sans-serif;
+    }
+    select {
+        padding: 10px;
+        padding-right: 30px;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        background-image: url('/images/downaero.svg');
+        background-repeat: no-repeat, repeat;
+        background-position: right .7em top 50%, 0 0;
+        background-size: .65em auto, 100%;
+    }
+
+    select::-ms-expand {
+        display: none;
+    }
+}
+
+
+@layer components {
+    .challo__card {
+        @apply bg-background rounded-3xl px-5 py-2
+    }
+    .page-title {
+        @apply  text-22 text-primary-1 font-semibold mb-12;
+    }
+}
+.challo__card-p6 {
+    @apply bg-background rounded-3xl px-6 py-7
+}
+.challo__card--header {
+
+}
+
+@layer components {
+    .challo__input {
+        @apply px-5 py-2.5 bg-white rounded-full outline-none focus:outline-none placeholder:text-gray-3 text-tints-5 w-full h-10;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 17px;
+        font-family: 'Ropa Sans', serif;
+        border: 1px solid #C2C5C6;
+    }
+}
+
+@layer components {
+    .challo__textarea {
+        @apply px-5 py-2.5 bg-white  outline-none focus:outline-none placeholder:text-gray-3 text-tints-5;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 17px;
+        font-family: 'Ropa Sans';
+        border: 1px solid #C2C5C6;
+        border-radius: 24px;
+        width: 910px;
+        height: 277px;
+        position: relative;
+        overflow: hidden;
+    }
+}
+textarea {
+    width:100%;
+    height:70%;
+    border: none;
+    overflow: auto;
+    outline: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+
+    resize: none;
+}
+
+
+.search__input {
+    @apply pl-12 border-0;
+    background-image: url("data:image/svg+xml,%3Csvg width='25' height='24' viewBox='0 0 25 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M17.7797 7.9745C17.2966 6.09065 16.2232 4.63739 14.7203 3.50708C13.7542 2.80737 12.6808 2.37677 11.5537 2.16147C11.2316 2.10765 10.9096 2.05382 10.5876 2H9.51412C9.19209 2.05382 8.87006 2.10765 8.60169 2.16147C7.20621 2.37677 5.97175 2.96884 4.95198 3.83003C3.61017 4.96034 2.69774 6.35977 2.26836 8.08215C2.16102 8.51275 2.10734 8.94334 2.05367 9.37394C2.05367 9.42776 2.05367 9.48159 2 9.53541V10.5581C2.05367 10.7734 2.05367 10.9887 2.10734 11.204C2.48305 13.5184 3.66384 15.4023 5.59604 16.6941C7.52825 18.0397 9.9435 18.3626 12.1441 17.7705C12.6808 17.6091 12.8418 16.9632 12.4661 16.5864C12.3051 16.4249 12.0367 16.3173 11.7684 16.4249C11.2316 16.5864 10.6412 16.6402 10.0508 16.6402C6.34746 16.6941 3.44915 13.7337 3.39548 10.0737C3.39548 6.4136 6.34746 3.45326 9.99717 3.45326C13.6469 3.45326 16.5989 6.4136 16.5989 10.0737C16.5989 10.5581 16.5452 10.9887 16.4379 11.4193C16.3842 11.6346 16.4379 11.9037 16.5989 12.0652C16.9746 12.4419 17.6723 12.2805 17.7797 11.6884C18.1017 10.5042 18.1017 9.26629 17.7797 7.9745ZM20.678 19.7082C19.6045 18.6317 17.565 16.5864 16.6525 15.6714C16.3842 15.4023 15.9548 15.4023 15.6864 15.6714C15.4181 15.9405 15.4181 16.3711 15.6864 16.6402C16.5989 17.5552 18.5847 19.6006 19.7119 20.6771C20.0876 21.0538 20.5169 21.1077 20.839 20.7847C21.0537 20.5156 21.0537 20.085 20.678 19.7082Z' fill='%231892CE'/%3E%3Cpath d='M7.259 7.27476C6.82963 7.75918 6.50759 8.2436 6.34657 8.88949C6.2929 9.32009 6.2929 9.75068 6.2929 10.1813C6.2929 10.6657 5.80985 11.0425 5.3268 10.8272C5.11211 10.7195 4.95109 10.558 4.89742 10.2889C4.89742 10.1275 4.89742 9.96598 4.84375 9.85833C4.84375 8.51272 5.27313 7.32859 6.23923 6.35975C6.50759 6.0368 6.93697 6.0368 7.20533 6.30592C7.47369 6.57505 7.52737 7.00564 7.259 7.27476Z' fill='%231892CE'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-position: 10px;
+    font-family: 'Ropa Sans';
+}
+
+@layer components {
+    .challo__btn {
+        @apply rounded-full py-2.5 px-5 font-semibold text-white text-15 text-center inline-block h-10
+    }
+    /**
+    Buttos
+    */
+    .btn-block {
+        @apply w-full
+    }
+    .btn-success {
+        @apply bg-primary-2 border-primary-2 border
+    }
+    .btn-primary {
+        @apply bg-primary-1 border border-primary-1
+    }
+    .btn-warms {
+        @apply bg-warms-3 border border-warms-3
+    }
+
+    /**
+    Outline button
+    */
+    .btn-outline-primary {
+        @apply bg-transparent border-primary-1 border text-15 text-tints-2 font-semibold
+    }
+}
+
+
+
+.challo__filter {
+    @apply rounded-full my-4 flex ;
+    padding: 2px;
+}
+
+.filters {
+    @apply w-full flex items-center
+}
+.filter-menu {
+    @apply relative
+}
+
+.filter-menu__label {
+    @apply relative
+}
+
+.filter-menu__label--title {
+    @apply inline-flex items-center cursor-pointer text-gray-3;
+    font-family: 'Ropa Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 17px;
+}
+
+.filter-menu__label--title svg {
+    @apply ml-2
+}
+
+
+.filter-option {
+
+}
+
+.table {
+    @apply w-full;
+    /* margin-left: -20px;
+    margin-right: -20px; */
+}
+
+.thead, .tbody {
+    /* @apply px-5 py-2.5; */
+    width: calc(100% + 40px);
+    margin-left: -20px;
+}
+.tr{
+    @apply px-5 py-2.5;
+}
+.thead .tr .content{
+    @apply text-primary-1;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    gap: 10px;
+}
+.thead .tr .content svg{
+    @apply fill-tones-2;
+}
+
+.tr .content {
+    @apply flex;
+}
+.tr .content .th{
+    @apply flex items-center;
+}
+.tr .content .th svg{
+    @apply ml-2.5;
+}
+
+.tbody .tr{
+
+}
+.form-field {
+    @apply  flex gap-x-6 mb-11;
+}
+
+.input-wrapper {
+
+}
+
+.input-wrapper label{
+    @apply text-15 text-primary-1 font-semibold
+}
+.input-wrapper-new label{
+    @apply text-xl text-primary-3 font-semibold
+}
+.input-wrapper p.value{
+    @apply text-gray-3 font-normal mt-3;
+    font-size: 16px;
+    line-height: 17px;
+    font-family: 'Ropa Sans';
+}
+
+
+.switch__input--label {
+    @apply text-tints-5 text-16 font-normal font-ropa;
+}
+
+@layer components {
+    .auth {
+        @apply flex justify-center items-center pt-[58px] pb-[150px] overflow-y-auto pt-0;
+        background: url('/images/auth_bg.png'), linear-gradient(90deg, #03D48E 0%, #01CFB6 38.06%, #08BAEC 67.5%, #008DB1 99.99%);
+        background-size: 80% 100%, cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .auth__container {
+        @apply max-w-[638px] w-6/12 px-[129px] py-[56px] bg-white rounded-56 mt-[50px];
+    }
+}
+
+@layer components {
+
+    .form-error {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 18px;
+        display: flex;
+        align-items: center;
+        color: #FF0000;
+        margin-top: 5px;
+    }
+
+    .input-label {
+        @apply text-15 text-primary-1 font-semibold;
+    }
+
+    .form-label {
+        @apply text-primary-1 text-15
+    }
+}
+
+
+@layer components {
+    .detail__row  {
+        @apply flex mb-10 last:mb-0 gap-5
+    }
+
+    .detail__label {
+        @apply font-semibold text-primary-1 text-15 font-poppins mb-1
+    }
+    .detail__value {
+        @apply font-normal text-gray-3 text-16 font-ropa
+    }
+}
+
+@layer components {
+    .challo__card__tabs {
+
+    }
+
+    .challo__card__tabs--top {
+        @apply flex mb-2 justify-between;
+        /* flex justify-between align-center mb-2 */
+    }
+    .challo__card__tabs--bottom {
+        @apply flex;
+    }
+
+    .challo__card__tabs--item {
+        @apply rounded-t-3xl bg-background px-8 py-3 font-poppins text-18xl text-primary-3 font-semibold ml-[1px] mr-[1px] first:ml-0 last:mr-0 border-b-2 border-white;
+    }
+
+    .challo__card__tabs--item.active {
+        @apply border-0
+    }
+}
+
+/* multi ranged date time picker */
+
+.ranged-date-picker .vc-pane-container{
+    @apply flex flex-col-reverse
+}
+
+.ranged-date-picker .vc-pane-container .vc-arrows-container {
+    @apply top-[70px]
+}
+.ranged-date-picker > .vc-pane-container .vc-pane-layout {
+    @apply gap-3;
+}
+.ranged-date-picker > .vc-pane-container > div:last-of-type {
+    @apply flex justify-around;
+}
+
+.ranged-date-picker > .vc-pane-container > div:last-of-type > .vc-time-picker {
+    border: 0px;
+}
+
+.number-input {
+    -moz-appearance: textfield;
+  }
+
+.number-input::-webkit-outer-spin-button,
+.number-input::-webkit-inner-spin-button {
+-webkit-appearance: none;
+margin: 0;
+}
+
+
+.filter_dates {
+    font-family: 'Ropa Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 17px;
+
+    color: #135F84;
+}
+
+.content .td, .content, .th{
+    margin-left: 2px;
+    margin-right: 3px;
+}
+
+
+.content .td{
+    word-break: break-all;
+}
+

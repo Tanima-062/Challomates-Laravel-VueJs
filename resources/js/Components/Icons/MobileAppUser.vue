@@ -1,0 +1,21 @@
+<template>
+  <svg
+    width="14"
+    height="20"
+    viewBox="0 0 14 20"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M6 16.01C6 16.5623 6.44772 17.01 7 17.01C7.55228 17.01 8 16.5623 8 16.01H6ZM8 16C8 15.4477 7.55228 15 7 15C6.44772 15 6 15.4477 6 16H8ZM3 2H11V0H3V2ZM12 3V17H14V3H12ZM11 18H3V20H11V18ZM2 17V3H0V17H2ZM3 18C2.44772 18 2 17.5523 2 17H0C0 18.6569 1.34315 20 3 20V18ZM12 17C12 17.5523 11.5523 18 11 18V20C12.6569 20 14 18.6569 14 17H12ZM11 2C11.5523 2 12 2.44772 12 3H14C14 1.34315 12.6569 0 11 0V2ZM3 0C1.34315 0 0 1.34315 0 3H2C2 2.44772 2.44772 2 3 2V0ZM8 16.01V16H6V16.01H8Z"
+      fill="currentColor"
+    />
+  </svg>
+</template>
+
+<script>
+export default {};
+</script>
+
+<style lang="scss" scoped>
+</style>
